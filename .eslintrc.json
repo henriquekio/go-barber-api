@@ -7,7 +7,7 @@
     "airbnb-base",
     "plugin:@typescript-eslint/recommended",
     "prettier/@typescript-eslint",
-    "plugin:prettier/recomended"
+    "plugin:prettier/recommended"
   ],
   "globals": {
     "Atomics": "readonly",
@@ -20,13 +20,14 @@
   },
   "plugins": ["@typescript-eslint", "prettier"],
   "rules": {
-    "import/extendions": [
+    "import/extensions": [
       "error",
       "ignorePackages",
       {
         "ts": "never"
       }
     ],
+    "class-methods-use-this": "off",
     "prettier/prettier": "error"
   },
   "settings": {
